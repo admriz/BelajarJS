@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>BOM JS</title>
+    </head>
+    <body>
+        <h1>CONTOH BOM JS</h1>
+        <button id="showUrl">TAMPILKAN URL</button>
+        <button id="goToGoogle">TAMPILKAN IG GWA</button>
+
+        <script>
+            const showUrlButton = document.getElementById("showUrl");
+            const goToGoogleButton = document.getElementById("goToGoogle");
+
+            showUrlButton.addEventListener("click", () => {
+                alert("Current URL :" + window.location.href);
+            });
+
+            goToGoogleButton.addEventListener("click", () => {
+                window.location.href = "https://instagram.com/d.vinrtty"
+            });
+        </script>
+    </body>
+</html>
